@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>SushiChristPlane</title>
+  </head>
+  <body id="everything">
+    <main id="content">
+      <h1>Do you love sushi?</h1>
+      <p>
+        Tarin and Matthew love sushi. Sushi is good. Take a look at all this
+        wonderful sushi!
+      </p>
+      <button id="start-sushi" onclick="sushiStart()">Press for Sushi</button>
+      <button id="stop-sushi" onclick="sushiStop()">Stop Sushi</button>
+      <img
+        id="sushi"
+        src="data:image/jpeg;base64,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"
+        alt="sushi"
+      />
+      <hr />
+      <h1>Benefits</h1>
+      <p>
+        Sushi has many benefits, first and foremost the amazing
+        <i>nutritional</i> value!
+      </p>
+      <p>
+        The graph below demonstrates the approximate gain potential on a "Per
+        Role" basis
+      </p>
+      <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+      <div><canvas id="acquisitions"></canvas></div>
+      <p>
+        Sushi benefits don't stop there. Sushi's true purpose shines bright when
+        families get together to spend hundreds of dollars indulging in the
+        Second Cardinal Sin.
+      </p>
+    </main>
+    <!-- <script type="module" src="dimensions.js"></script> -->
+    <script type="module" src="./acquisitions.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
